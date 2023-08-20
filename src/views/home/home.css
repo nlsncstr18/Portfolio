@@ -1,0 +1,122 @@
+img {
+  -webkit-mask-image: linear-gradient(
+    45deg,
+    #000 25%,
+    rgba(0, 0, 0, 0.2) 50%,
+    #000 75%
+  );
+  mask-image: linear-gradient(
+    45deg,
+    #000 25%,
+    rgba(0, 0, 0, 0.2) 50%,
+    #000 75%
+  );
+  -webkit-mask-size: 800%;
+  mask-size: 800%;
+  -webkit-mask-position: 0;
+  mask-position: 0;
+}
+
+img:hover {
+  transition: mask-position 2s ease, -webkit-mask-position 2s ease;
+  -webkit-mask-position: 120%;
+  mask-position: 120%;
+  opacity: 100;
+}
+video:hover {
+  transition: mask-position 2s ease, -webkit-mask-position 2s ease;
+  -webkit-mask-position: 120%;
+  mask-position: 120%;
+  opacity: 100;
+}
+.name::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(15, 15, 15);
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.4s;
+}
+.info-section {
+  color: #696969;
+  font-weight: 700;
+  border-color: #555555;
+}
+.about-section {
+  color: #555555;
+}
+.border-trans {
+  border: 1px solid #3d3b3b;
+}
+
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
+
+body {
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+  background-color: black;
+}
+.animate-character {
+  background-image: linear-gradient(
+    -225deg,
+    #000000 0%,
+    #3f3f3f 29%,
+    #ffffff 67%,
+    #000000 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 6s linear infinite;
+  display: inline-block;
+  font-size: 1rem;
+}
+.animate-character2 {
+  background-image: linear-gradient(
+    -225deg,
+    #000000 0%,
+    #616060 29%,
+    #000000 67%,
+    #000000 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 6s linear infinite;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.contact-me {
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff,
+    0 0 40px rgb(64, 66, 66), 0 0 80px rgb(255, 255, 255),
+    0 0 90px rgb(59, 63, 63), 0 0 100px rgb(80, 88, 88),
+    rgb(116, 119, 119) 150px rgb(40, 41, 41);
+}
+.skill-set {
+  color: #9d724f;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
