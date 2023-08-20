@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nelson.me/static/css/main.927f24f8.css",
+    "main.js": "/nelson.me/static/js/main.57b9a70c.js",
+    "static/media/Myself.png": "/nelson.me/static/media/Myself.facad3aa062e8a0368a6.png",
+    "static/media/transcon2.png": "/nelson.me/static/media/transcon2.b98feafff2e40fb3d1fb.png",
+    "index.html": "/nelson.me/index.html",
+    "main.927f24f8.css.map": "/nelson.me/static/css/main.927f24f8.css.map",
+    "main.57b9a70c.js.map": "/nelson.me/static/js/main.57b9a70c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.927f24f8.css",
+    "static/js/main.57b9a70c.js"
+  ]
+}
